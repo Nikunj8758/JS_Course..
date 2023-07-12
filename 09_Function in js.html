@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 1;
+        let b = 2;
+        let c = 3;
+
+        console.log("one pluse average of a and b is ", 1 + (a + b) / 2)
+        console.log("done")
+        console.log("one pluse average of b and c is ", 1 + (b + c) / 2)
+        console.log("done")
+        console.log("one pluse average of c and a is ", 1 + (c + a) / 2)
+        console.log("done")
+        // In the program I shown above is very lengthy and irritated so that program make a short and one line to functionopation lets try this function option.
+
+        function nikunj(x, y) {
+            return 1 + (x + y) / 2
+        }
+        console.log("one pluse average of a and b is ", nikunj(a, b))
+        console.log("one pluse average of b and c is ", nikunj(b, c))
+        console.log("one pluse average of c and a is ", nikunj(c, a))
+
+        // types of functions
+        // 1st type i show you above
+
+        // 2ed type (aerro function)
+        const sum = (p, q) => {
+            return p + q
+        }
+        console.log(sum(9, 7))
+
+        // 3rd type
+
+        const hello = () => {
+            // consol.log("hello how are you")
+            return "hii"
+        }
+        let v = hello();
+        console.log(v)
+
+    </script>
+</body>
+</html>

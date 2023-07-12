@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = [45, 46, 47, 48, 49, 52]
+
+
+        console.log(num)
+
+        // length
+        console.log(num.length)
+
+        // toString
+        let a = num.toString()
+        console.log(typeof (a))
+        console.log(a)
+
+        // pop  (pop only last word or last digit)
+        let b = num.pop()
+        console.log(num, b)
+
+        // push this mathod output print length number
+        let c = num.push(52)
+        console.log(num, c)
+
+        // shifts
+        console.log(num, num.shift(45))
+
+        // unshift
+        console.log(num, num.unshift(45))
+
+        // join
+        console.log(num, num.join(" A "))
+
+        // concat
+        let d = ("this is student RollNumber")
+        console.log(num.concat(d))
+
+        // flat (basicallu in this method show all numbers )
+        console.log(num.flat())
+
+        // splice  (all remove)
+        console.log(num.splice())
+
+        // slice
+        console.log(num.slice(2, 4))
+
+        // sort
+        let compare = (x, y) => {
+            return x - y
+        }
+        let num2 = [545, 4, 6, 87, 23, 143, 653, 823409, 45, `jkh`, "ami", 'nikk', 98]
+        console.log(num2.sort())
+
+
+        // sort in small number to big number.
+        console.log(num2.sort(compare))
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for loop
+
+        for (let a = 1; a <= 22; a++) {
+            console.log(a)
+        }
+
+
+        let n = 0
+        let hey = prompt("enter the value of n")
+        hey = Number.parseInt(hey)
+        for (let i = 1; i <= hey; i++) {
+
+            console.log(i)
+        }
+
+
+
+        let c = 0
+        let num = prompt("who many counts of i gives you ?")
+        num = Number.parseInt(num)
+        for (let b = 0; b < num; b++) {
+            c += (b + 1)
+        }
+        console.log("sum of first " + num + " natural number is " + c)
+
+
+
+        // for in loop
+        let obj = {
+            nikunj: 67,
+            jigo: 77,
+            harmish: 75,
+            supan: 87
+        }
+        for (let a in obj) {
+            console.log("marks of " + a + " are " + obj[a])
+        }
+
+        // for of loop
+
+        for (let b of "Nikunj") {
+            console.log(b)
+        }
+    </script>
+</body>
+</html>

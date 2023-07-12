@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let Studentmarks = {
+            ami: 98,
+            nikunj: 89,
+            supan: 110,
+            harmish: 76,
+            appu: 90
+        }
+        // question-1 for loop
+        for (let i = 0; i < Object.keys(Studentmarks).length; i++) {
+            console.log("The marks of " + Object.keys(Studentmarks)[i] + " is " + Studentmarks[Object.keys(Studentmarks)[i]]);
+        }
+
+        // question-2 for in loop
+        for (let key in Studentmarks) {
+            console.log("The marks of " + key + " is " + Studentmarks[key])
+        }
+
+        let cn = 12
+        let a
+        while (a != cn) {
+            console.log("thts a in correct number")
+            a = prompt("enter the correct number")
+        }
+        console.log("you have enter a correct number")
+
+        // question-4 functuion making
+        let mean = (e, f, g, h) => {
+            return (e + f + g + h) / 4
+        }
+        let e = prompt("enter the value of e")
+        let f = prompt("enter the value of f")
+        let g = prompt("enter the value of g")
+        let h = prompt("enter the value of h")
+        e = Number.parseInt(e)
+        f = Number.parseInt(f)
+        g = Number.parseInt(g)
+        h = Number.parseInt(h)
+
+        console.log(mean(e, f, g, h))
+    </script>
+</body>
+
+</html>

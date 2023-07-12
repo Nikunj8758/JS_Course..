@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // question 1
+        let sentence = ("Ayansh is very intelligent children")
+        let word = ("is")
+        console.log(`the word "${word}" ${sentence.includes(word) ? 'is' : 'is not '} in the sentence`)
+
+        // question 2
+        const str1 = 'Saturday night plans';
+        console.log(str1.startsWith('Sat'));
+        console.log(str1.startsWith('Sat', 'Sat'));
+
+        // ?question 3
+        console.log(sentence.toLowerCase())
+        console.log(sentence.toUpperCase())
+
+        // question 4
+        let set = ("I have a 4000")
+        // method1
+        let slice = Number.parseInt(set.slice("I have a ".length))
+        // method 2
+        let hey = Number.parseInt(set.slice(9))
+        console.log(slice)
+        console.log(hey)
+    </script>
+</body>
+
+</html>

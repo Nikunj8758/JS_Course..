@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let name = "nikunj"
+        let name2 = "     ami     "
+
+        console.log(name.length)
+        console.log(name.substring(2, 4))
+        console.log(name[0])
+        console.log(name[1])
+        console.log(name[2])
+        console.log(name[5])
+        console.log(name.toUpperCase())
+        console.log(name.toLowerCase())
+        console.log(name.slice(2, 5))
+        console.log(name.slice(2))
+        console.log(name2)
+        console.log(name2.trim())
+        console.log(name2.trimEnd())
+        console.log(name2.trim())
+
+        // careful in spelling problems
+        console.log(name.replace("unj", "ami"))
+        let friend = "supan"
+
+        console.log(name.concat(" is friend of ", friend, " okay"))
+
+        for (let i of "nikunj") {
+            console.log(i)
+        }
+
+        const sentence = 'The quick brown fox jumps over the lazy dog.';
+        const word = 'dog';
+        console.log(`The word "${word}" ${sentence.includes(word) ? 'is' : 'is not'} in the sentence`);
+
+
+        const str1 = 'Saturday night plans';
+        console.log(str1.startsWith('Sat'));
+        console.log(str1.startsWith('Sat', 'Sat'));
+
+
+    </script>
+</body>
+
+</html>
